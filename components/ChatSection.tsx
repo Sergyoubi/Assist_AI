@@ -7,10 +7,10 @@ import { HiPlusCircle } from "react-icons/hi";
 import Typewriter from "typewriter-effect";
 
 const ChatSection = () => {
-  const { messages, input, handleInputChange, handleSubmit } = useChat();
+  const { messages, input, handleInputChange, handleSubmit, isLoading } =
+    useChat();
   const handleReload = () => {
     window.location.reload();
-    //reload();
   };
 
   return (
@@ -18,7 +18,7 @@ const ChatSection = () => {
       <div className="w-full h-[85%] flex justify-center items-center">
         {messages.length === 0 ? (
           <div className="w-[50%] h-full flex justify-start items-start">
-            <div className="text-neutral-500 text-5xl font-semibold relative top-[20%]">
+            <div className="text-neutral-500 text-5xl bg-violet-300 font-semibold relative top-[20%]">
               <Typewriter
                 options={{
                   strings: ["Hello, How can I help you today?"],

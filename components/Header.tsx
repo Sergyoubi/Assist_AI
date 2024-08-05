@@ -4,7 +4,10 @@ import { FaFilePen } from "react-icons/fa6";
 const Header = () => {
   return (
     <div className="w-full h-[10%] flex justify-center items-center">
-      <div className="w-full h-full flex justify-start items-center">
+      <div className="w-full h-full flex justify-start items-center gap-3">
+        <p className="text-slate-100 font-medium text-xl relative left-[5%]">
+          Assist Ai
+        </p>
         <FaFilePen size={25} className="text-slate-100 relative left-[5%]" />
       </div>
       <div className="w-full h-full flex justify-end items-center">
